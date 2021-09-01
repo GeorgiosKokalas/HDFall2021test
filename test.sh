@@ -13,7 +13,7 @@ echo ""
 echo "Assembly Testing"
 echo "----------------"
 echo "  -Compiling"
-gcc atest.a -o atest 2>> err.txt
+gcc atest.s -o atest 2>> err.txt
 echo "  -Running"
 ./atest 2>> err.txt 1>> res.txt
 
