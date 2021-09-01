@@ -1,0 +1,9 @@
+Hello world!
+Your integer is 4
+ The call square(4) returns 16
+Greetings from the master, 
+
+Seq. sum:
+Par. sum:
+
+Hello from thread 0 of 
