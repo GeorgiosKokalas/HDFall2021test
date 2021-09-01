@@ -34,7 +34,7 @@ echo "-----------"
 echo "  -Compiling"
 cd OpenMP && make 2>> ../err.txt
 echo "  -Running"
-./forkJoin 2>> ../err.txt 1>> ../res.txt
+./reduction 2>> ../err.txt 1>> ../res.txt
 cd ..
 
 
