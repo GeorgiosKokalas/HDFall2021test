@@ -1,18 +1,26 @@
 #!/bin/bash
 
 
+echo "Creating deleteMe.txt"
+echo "---------"
+echo "  -Creating"
+touch deleteMe.txt 2> err.txt 1> /dev/null
+echo "  -Searching"
+ls 2>> err.txt 1> res.txt
+
+echo ""
 echo "C testing"
 echo "---------"
 echo "  -Compiling"
-gcc ctest.c -o ctest 2> err.txt 
+gcc ctest.c -o ctest 2>> err.txt 
 echo "  -Running"
-./ctest 2>> err.txt 1> res.txt
+./ctest 2>> err.txt 1>> res.txt
 
 
 echo ""
 echo "Assembly Testing"
 echo "----------------"
-echo "  -Compiling"
+echo "  -Assembling"
 gcc atest.s -o atest 2>> err.txt 
 echo "  -Running"
 ./atest 2>> err.txt 1>> res.txt
@@ -21,7 +29,7 @@ echo "  -Running"
 echo ""
 echo "MPI testing"
 echo "-----------"
-echo "  -Compiling"
+echo "  -Compiling with make"
 cd MPI && make 2>> ../err.txt 1> /dev/null
 echo "  -Running"
 ./masterWorker 2>> ../err.txt 1>> ../res.txt
@@ -31,7 +39,7 @@ cd ..
 echo ""
 echo "OpenMP testing"
 echo "-----------"
-echo "  -Compiling"
+echo "  -Compiling with make"
 cd OpenMP && make 2>> ../err.txt 1> /dev/null
 echo "  -Running"
 ./reduction 2>> ../err.txt 1>> ../res.txt
@@ -41,7 +49,7 @@ cd ..
 echo ""
 echo "hybrid testing"
 echo "-----------"
-echo "  -Compiling"
+echo "  -Compiling with make"
 cd hybrid && make 2>> ../err.txt 1> /dev/null
 echo "  -Running"
 ./spmd 2>> ../err.txt 1>> ../res.txt
