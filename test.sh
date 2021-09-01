@@ -64,6 +64,8 @@ done < rescheck.txt
 if $everythingWorks 
 then
   echo -e "\e[1;32mTesting showed no errors \e[0m"
+  cd ..
+  rm -rf HDFall2021test
 else
   echo -e "\e[1;33mTESTING RESULTED IN ERROR\e[0m"
 fi
