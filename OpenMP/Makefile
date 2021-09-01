@@ -1,4 +1,4 @@
-OBJ = forkJoin
+OBJ = reduction
 
 CC = gcc
 CFLAGS = -Wall -ansi -pedantic -std=c99
