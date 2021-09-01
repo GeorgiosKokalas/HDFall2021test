@@ -24,18 +24,8 @@ echo "-----------"
 echo "  -Compiling"
 cd MPI && make 2>> ../err.txt
 echo "  -Running"
-./spmd 2>> ../err.txt 1>> ../res.txt
-
-
-echo ""
-echo "MPI testing"
-echo "-----------"
-echo "  -Compiling"
-cd MPI && make 2>> ../err.txt
-echo "  -Running"
 ./masterWorker 2>> ../err.txt 1>> ../res.txt
 cd ..
-
 
 
 echo ""
