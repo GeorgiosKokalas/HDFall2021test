@@ -1,5 +1,7 @@
 deleteMe.txt
-Hello world!
+Hello, World!
+a = 10
+0 0 0 0 1 0 1 0
 Your integer is 4
  The call square(4) returns 16
 Greetings from the master, 
