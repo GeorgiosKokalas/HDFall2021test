@@ -32,7 +32,7 @@ echo "-----------"
 echo "  -Compiling with make"
 cd pthread && make 2>> ../err.txt 1> /dev/null
 echo "  -Running"
-./barrier 2>> ../err.txt 1>> ../res.txt
+./barrier 2 2>> ../err.txt 1>> ../res.txt
 cd ..
 
 
