@@ -27,6 +27,16 @@ echo "  -Running"
 
 
 echo ""
+echo "pthread testing"
+echo "-----------"
+echo "  -Compiling with make"
+cd pthread && make 2>> ../err.txt 1> /dev/null
+echo "  -Running"
+./barrier 2>> ../err.txt 1>> ../res.txt
+cd ..
+
+
+echo ""
 echo "MPI testing"
 echo "-----------"
 echo "  -Compiling with make"
