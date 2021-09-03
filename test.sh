@@ -62,7 +62,7 @@ echo "-----------"
 echo "  -Compiling with make"
 cd hybrid && make 2>> ../err.txt 1> /dev/null
 echo "  -Running"
-./spmd 2>> ../err.txt 1>> ../res.txt
+./spmd 2 2>> ../err.txt 1>> ../res.txt
 cd ..
 
 
