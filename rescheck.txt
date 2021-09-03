@@ -4,6 +4,8 @@ a = 10
 0 0 0 0 1 0 1 0
 Your integer is 4
  The call square(4) returns 16
+Hello from thread #0 of 1
+Goodbye from thread #0
 Greetings from the master, 
 
 Seq. sum:
